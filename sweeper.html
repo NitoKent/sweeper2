@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainSweeper.css">
+
+</head>
+<body onload="onInit()">
+    
+    <button class='glowing-btn'><span class='glowing-txt'>R<span class='faulty-letter'>E</span>LOAD</span></button>
+
+<div class="sign-wrap-4">
+    <div class="sign_word">Mi<span>ne</span> Sw<span>ee</span>p<span>er</span></div>
+</div>
+<p id="numberOfBombs">💣 <span id ="number">_ </span></p>
+<button onclick="startGame(gLevel)" id="board4x4">4X4</button>
+<button onclick="startGame(gLevel2)" id="board5x5">5X5</button>
+<button onclick="startGame(gLevel3)" id="board6x6">6X6</button>
+  <button onclick="reload()">reload</button>
+  <table id="board" style="background-color: rgb(255, 255, 255);">
+  </table>
+    <script src="mainSweeper.js"></script>
+</body>
+</html>
